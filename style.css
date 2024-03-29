@@ -2,11 +2,11 @@ body{
     margin: 0;
     padding: 0;
 }
-.container{
+.grid-container{
     box-sizing: border-box;
     height: 100vh;
     display: grid;
-    background-color: #EDB5BD;
+    background-color: #C3CFD9;
     padding: 10px;
     gap: 10px;
 
@@ -18,8 +18,8 @@ body{
         "footer footer"
     ;
 }
-#item-header, #item-aside, #item-main, #item-footer{
-    background-color: #A3DFD9;
+#item-header, #item-aside, #item-footer{
+    background-color: #DFE6ED;
     text-align: center;
     font-size: 25px;
     padding: 10px;
@@ -30,9 +30,32 @@ body{
 #item-aside{
     grid-area: aside;
 }
-#item-main{
-    grid-area: main;
-}
 #item-footer{
     grid-area: footer;
+}
+.flex-container-main{
+    grid-area: main;
+    display: flex;
+    background-color: #EDB5BD;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    
+}
+.flex-container-line1, .flex-container-line2{
+    box-sizing: border-box;
+    background-color: #D5E7F7;
+    flex-direction: row;
+    font-size: 25px;
+    height: 35vh;
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+}
+.flex-item-article1, .flex-item-article2, .flex-item-article3, .flex-item-article4{
+    background-color: #A3DFD9;
+    box-sizing: border-box;
+
+    width: 75vh;
+    padding: 15px;
 }
